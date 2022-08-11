@@ -1,0 +1,94 @@
+html,
+body,
+.body {
+	height: 100%;
+	font-family: 'Inconsolata', sans-serif;
+}
+
+.title {
+	margin-bottom: 5vh;
+	text-align: center;
+}
+
+.cellX {
+	background-image: url('./public/img/cross.svg');
+}
+
+.cellO {
+	background-image: url('./public/img/circle.svg');
+}
+
+.cell {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	aspect-ratio: 1/ 1;
+	padding: 5%;
+}
+
+.game-grid {
+	margin-bottom: 5vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.container {
+		max-width: 50%;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.container {
+		max-width: 30%;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.container {
+		max-width: 20%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.container {
+		max-width: 10%;
+	}
+}
+#cell-1,
+#cell-2,
+#cell-3,
+#cell-4,
+#cell-5,
+#cell-6 {
+	border-bottom: 1px solid black;
+}
+
+#cell-1,
+#cell-2,
+#cell-4,
+#cell-5,
+#cell-7,
+#cell-8 {
+	border-right: 1px solid black;
+}
+
+#cell-2,
+#cell-3,
+#cell-5,
+#cell-6,
+#cell-8,
+#cell-9 {
+	border-left: 1px solid black;
+}
+
+#cell-4,
+#cell-5,
+#cell-6,
+#cell-7,
+#cell-8,
+#cell-9 {
+	border-top: 1px solid black;
+}
